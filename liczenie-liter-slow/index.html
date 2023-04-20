@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Moja strona internetowa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Program który liczy litery i słowa w podanym wyrazie/zdaniu</h1>
+    <p>Bot używa CMD oraz PowerShell 
+
+    </p>
+    <h2>Wersje programu:</h2>
+    <p>
+        &nbsp&nbsp&nbsp&nbsp CMD .bat file - Wersja która nie uznaje spacji
+        <br>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp link do pliku</p>
+        &nbsp&nbsp&nbsp&nbspCMD .bat file - Wersja która uznaje spacje
+        <br>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp link do pliku</p>
+        &nbsp&nbsp&nbsp&nbspPowerShell - Wersja która nie uznaje spacji
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ("Twój tekst" -replace " ", "").ToCharArray().Length </p>
+        
+        &nbsp&nbsp&nbsp&nbspPowerShell - Wersja która uznaje spacje
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ("Twój tekst".ToCharArray() | Measure-Object -Character).Characters</p>
+    </p>
+
+
+</body>
