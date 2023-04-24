@@ -8,23 +8,22 @@
 </head>
 <body>
     <h1>Program który liczy litery w podanym wyrazie/zdaniu</h1>
-    <p>Bot używa CMD oraz PowerShell 
-
-    </p>
+    <ul><p>Bot używa CMD oraz PowerShell</p></ul>
     <h2>Wersje programu:</h2>
-    <p>
-        &nbsp&nbsp&nbsp&nbsp CMD .bat file - Wersja która nie uznaje spacji
-        <br>
-        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp link do pliku</p>
-        &nbsp&nbsp&nbsp&nbspCMD .bat file - Wersja która uznaje spacje
-        <br>
-        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp link do pliku</p>
-        &nbsp&nbsp&nbsp&nbspPowerShell - Wersja która nie uznaje spacji
-        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ("Twój tekst" -replace " ", "").ToCharArray().Length </p>
-        
-        &nbsp&nbsp&nbsp&nbspPowerShell - Wersja która uznaje spacje
-        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ("Twój tekst".ToCharArray() | Measure-Object -Character).Characters</p>
-    </p>
-
-
+	<ul>
+		<h2>CMD</h2>
+		<ul>
+			<li><p>CMD .bat file - Wersja która nie liczy spacji</p></li>
+			<a href="files/letters_numer_no_space.bat" style="color: green; text-decoration: none;"><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp letters numer no space.bat</p></a>
+			<li><p>CMD .bat file - Wersja która liczy spacje</p></li>
+			<a href="files/letters_numer.bat" style="color: green; text-decoration: none;"><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp letters numer.bat</p></a>
+		</ul>
+		<h2>PowerShell</h2>
+		<ul>
+			<li><p>PowerShell - Wersja która nie liczy spacji<p></li>
+			<ul><p>("Twój tekst" -replace " ", "").ToCharArray().Length </p></ul>
+			<li><p>PowerShell - Wersja która liczy spacje</p></li>
+			<ul><p>("Twój tekst".ToCharArray() | Measure-Object -Character).Characters</p></ul>
+		</ul>
+	</ul>
 </body>
