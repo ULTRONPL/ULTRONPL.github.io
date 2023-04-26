@@ -13,6 +13,12 @@
     font-weight: bold;
 }
 
+@font-face{
+    font-family: "BrunoAce";
+    src: url(fonts/BrunoAce-Regular.ttf) format("truetype");
+    font-weight: bold;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -27,10 +33,13 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), #333333 40%, #333333);
+    height: 106px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #333333 30%, #333333);
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding-top: 15px;
+    font-family: "BrunoAce", sans-serif;
+    font-size: 20px;
 }
   
 #mainpage {
@@ -38,7 +47,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    margin-bottom: 125px;
+    margin-bottom: 135px;
 }
   
 
@@ -85,6 +94,11 @@ footer{
     height: 115px;
     width: 350px;
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.btn5 button{
+    width: 350px;
+    padding: 0;
 }
 
 button:hover{
