@@ -318,3 +318,204 @@ button span{
       left: 0;
     }
 }
+
+
+@media only screen and (max-width: 768px){
+    .buttonsall{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .buttonsall2{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .buttonsall3{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .btn1 button, .btn2 button, .btn3 button, .btn4 button, .btn5 button, .btn6 button, .btn7 button, .btn8 button, .btn9 button{
+        position: relative;
+        display: block;
+        border: none;
+        color: white;
+        background: #222;
+        padding: 10px 50px;
+        font-size: 22px;
+        font-weight: 700;
+        cursor: pointer;
+        overflow: hidden;
+        height: 100px;
+        width: 300px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    }
+    
+    .btn5 button{
+        width: 350px;
+        padding: 0;
+    }
+    
+    button:hover{
+        box-shadow: 0 5px 50px rgba(0,0,0,.2);
+    }
+    
+    .btn1 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn2 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn3 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn1:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn2:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn3:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn4 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn5 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn6 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn4:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn5:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn6:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn7 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn8 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn9 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn7:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn8:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn9:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }    
+}
