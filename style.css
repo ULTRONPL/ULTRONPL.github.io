@@ -357,13 +357,13 @@ button span{
         border: none;
         color: white;
         background: #222;
-        padding: 0;
+        padding: 8px;
         font-size: 11px;
         font-weight: 700;
         cursor: pointer;
         overflow: hidden;
-        height: 60px;
-        width: 180px;
+        height: 70px;
+        width: 144px;
         box-shadow: 0 5px 15px rgba(0,0,0,.2);
     }
 
@@ -391,7 +391,7 @@ button span{
         text-align: center;/*cały element z animacją*/
         position: relative;
         padding-top: 25px ;
-        padding-left: 15px;
+        padding-left: 5px;
     }
     
     .wrapper .static-txt{  
@@ -450,4 +450,148 @@ button span{
           left: 0;
         }
     }    
+    
+    .btn1 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 170%;
+        transition: all .6s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn2 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 170%;
+        transition: all .6s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn3 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 170%;
+        transition: all .6s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn1:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn2:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn3:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn4 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 170%;
+        transition: all .6s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn5 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 170%;
+        transition: all .6s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn6 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 170%;
+        transition: all .6s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn4:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn5:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn6:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn7 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 170%;
+        transition: all .6s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn8 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 170%;
+        transition: all .6s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn9 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 170%;
+        transition: all .6s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn7:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn8:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn9:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
 }
