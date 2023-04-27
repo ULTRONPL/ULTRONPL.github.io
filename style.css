@@ -307,7 +307,7 @@ button span{
     content: "";
     position: absolute;
     left: 0;
-    height: 100%;
+    height: 110%;
     width: 100%;
     background: rgba(53,55,64);
     border-left: 2px solid #FC6D6D;
@@ -357,12 +357,13 @@ button span{
         border: none;
         color: white;
         background: #222;
-        font-size: 17px;
+        padding: 0;
+        font-size: 11px;
         font-weight: 700;
         cursor: pointer;
         overflow: hidden;
-        height: 80px;
-        width: 280px;
+        height: 60px;
+        width: 180px;
         box-shadow: 0 5px 15px rgba(0,0,0,.2);
     }
 
@@ -375,7 +376,7 @@ button span{
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 130px;
+        height: 148px;
         background: linear-gradient(to bottom, rgba(0,0,0,0), #333333 20%, #333333);
         color: #fff;
         text-align: center;
@@ -386,4 +387,67 @@ button span{
     #mainpage {
         margin-bottom: 150px;
     }
+    .wrapper{
+        text-align: center;/*cały element z animacją*/
+        position: relative;
+        padding-top: 25px ;
+        padding-left: 15px;
+    }
+    
+    .wrapper .static-txt{  
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Quinque", sans-serif;  /* text statyczny*/
+    }
+    
+    .wrapper .dynamic-txts{
+        margin-left: 20px;
+        height: 90px;
+        line-height: 80px;
+        overflow: hidden;
+    }
+    
+    .dynamic-txts li{
+        list-style: none;
+        color: #FC6D6D;
+        font-size: 50px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    
+    @keyframes slide {
+        100%{
+          top: -360px;
+        }
+    }
+    
+    .dynamic-txts li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+        font-family: "SummerPixel", sans-serif;   /* text ruchomy*/
+    }
+    
+    .dynamic-txts li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 160%;
+        width: 100%;
+        background: rgba(53,55,64);
+        border-left: 2px solid #FC6D6D;
+        animation: typing 3s steps(10) infinite;
+    }
+    
+    @keyframes typing {
+        40%, 60%{
+          left: calc(100% + 30px);
+        }
+        100%{
+          left: 0;
+        }
+    }    
 }
