@@ -362,8 +362,8 @@ button span{
         font-weight: 700;
         cursor: pointer;
         overflow: hidden;
-        height: 80px;
-        width: 140px;
+        height: 85px;
+        width: 130px;
         box-shadow: 0 5px 15px rgba(0,0,0,.2);
     }
 
