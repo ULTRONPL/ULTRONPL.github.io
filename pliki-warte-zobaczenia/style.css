@@ -1,0 +1,30 @@
+body{
+    background-color: #343F4F;
+    color: white;
+    padding: 5px;
+    padding-left: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    color: green;
+}
+
+
+@media only screen and (min-width: 768px){
+    li{
+        list-style-type: disc;
+    }
+    
+    .windows{
+        margin-right: 5%;
+    }
+    
+    .linux{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 160px;
+        padding-right: 150px;
+    }    
+}
