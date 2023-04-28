@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Moja strona internetowa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zmiana języka w przeglądarce Opera</h1>
+    <ul><p>
+    </p></ul>
+	
+    <h2>deb</h2>
+	<ul>
+		<h3>Location:</h3>
+		<ul>	
+			<p><h4>/usr/share/applications/opera.desktop</h4>
+			Do lini "Exec=" dodajesz --lang=pl a następnie %U (nie może być dwóch %U w jednej linicje "Exec")</p>
+		</ul>
+	</ul>
+	<h2>apt</h2>
+	<ul>
+		<h3>Location:<br>  </h3>
+		<ul>
+			<ul>
+
+			</ul>
+		</ul>
+	</ul>
+	<h2>snap</h2>
+	<ul>
+		<h3>Location:<br>/var/lib/snapd/desktop/applications/opera_opera.desktop</h3>
+		<ul>	
+			<p>Do lini "Exec=" dodajesz --lang=pl a następnie %U (nie może być dwóch %U w jednej linicje "Exec")</p>
+		</ul>
+	</ul>
+	<h2>flatpack</h2>
+	<ul>
+		<h3>Location:
+		</h3>
+		<ul>
+			<ul>
+
+			</ul>
+		</ul>
+	</ul>
+</body>
