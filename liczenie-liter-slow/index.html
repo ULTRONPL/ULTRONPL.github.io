@@ -20,10 +20,11 @@
 		</ul>
 		<h2>PowerShell</h2>
 		<ul>
+			<p>Zamieniasz tekst w <span class="replace-text">czerwonym</span> kolorze na twoje słowo/zdanie</p>
 			<li><p>PowerShell - Wersja która nie liczy spacji<p></li>
-			<ul><p>("Twój tekst" -replace " ", "").ToCharArray().Length </p></ul>
+			<ul><p>("<span class="replace-text">Twój tekst</span>" -replace " ", "").ToCharArray().Length</p></ul>
 			<li><p>PowerShell - Wersja która liczy spacje</p></li>
-			<ul><p>("Twój tekst".ToCharArray() | Measure-Object -Character).Characters</p></ul>
+			<ul><p>("<span class="replace-text">Twój tekst</span>".ToCharArray() | Measure-Object -Character).Characters</p></ul>
 		</ul>
 	</ul>
 </body>
