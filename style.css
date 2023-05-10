@@ -61,7 +61,7 @@ body{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 180px;
+    gap: 175px;
 }
 
 .buttonsall2{
@@ -81,7 +81,7 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 175px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .btn1 button, .btn2 button, .btn3 button, .btn4 button, .btn5 button, .btn6 button, .btn7 button, .btn8 button, .btn9 button{
