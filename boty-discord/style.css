@@ -1,0 +1,1599 @@
+@font-face{
+    font-family: "MemphisRiver";
+    src: url(fonts/MemphisRiver.ttf) format("truetype");
+}
+@font-face{
+    font-family: "SummerPixel";
+    src: url(fonts/SummerPixelWide22Regular-4BoW4.ttf) format("truetype");
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Quinque";
+    src: url(fonts/Quinquefive-K7qep.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "BrunoAce";
+    src: url(fonts/BrunoAce-Regular.ttf) format("truetype");
+    font-weight: bold;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgba(53,55,64);
+    position: relative;
+}
+
+.comp{
+    display: none;
+}
+
+.comp-small{
+    display: none;
+}
+
+.phone{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 148px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #333333 20%, #333333);
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    font-family: "BrunoAce", sans-serif;
+    font-size: 15px;
+}
+
+.tablet{
+    display: none;
+}
+
+#mainpage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 135px;
+}
+
+
+
+
+
+
+
+
+/*phone version*/
+
+.buttonsall{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+.buttonsall2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+.buttonsall3{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 4px;
+}
+.btn1 button, .btn2 button, .btn3 button, .btn4 button, .btn5 button, .btn6 button, .btn7 button, .btn8 button, .btn9 button{
+    position: relative;
+    display: block;
+    border: none;
+    color: white;
+    background: #222;
+    padding: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    overflow: hidden;
+    height: 85px;
+    width: 130px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.comp{
+    display: none;
+}
+
+.comp-small{
+    display: none;
+}
+.phone{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 148px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #333333 20%, #333333);
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    font-family: "BrunoAce", sans-serif;
+    font-size: 15px;
+}
+#mainpage {
+    margin-bottom: 150px;
+}
+.wrapper{
+    text-align: center;/*cały element z animacją*/
+    position: relative;
+    padding-top: 25px ;
+    padding-left: 2px;
+}
+
+.wrapper .static-txt{  
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Quinque", sans-serif;  /* text statyczny*/
+}
+
+.wrapper .dynamic-txts{
+    margin-left: 20px;
+    height: 90px;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+.dynamic-txts li{
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+      top: -360px;
+    }
+}
+
+.dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+    font-family: "SummerPixel", sans-serif;   /* text ruchomy*/
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 160%;
+    width: 100%;
+    background: rgba(53,55,64);
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+}    
+
+.btn1 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 340%;
+    transition: all .9s ease-in-out;
+    background: #78c7d2;
+    transform: translate(-120%, -25%) rotate(40deg);
+}
+  
+.btn2 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 340%;
+    transition: all .9s ease-in-out;
+    background: #78c7d2;
+    transform: translate(-120%, -25%) rotate(40deg);
+}
+
+.btn3 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 340%;
+    transition: all .9s ease-in-out;
+    background: #78c7d2;
+    transform: translate(-120%, -25%) rotate(40deg);
+}
+
+.btn1:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+}
+
+.btn2:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+}
+
+.btn3:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+}
+
+.btn4 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 340%;
+    transition: all .9s ease-in-out;
+    background: #78c7d2;
+    transform: translate(-120%, -25%) rotate(40deg);
+}
+  
+.btn5 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 340%;
+    transition: all .9s ease-in-out;
+    background: #78c7d2;
+    transform: translate(-120%, -25%) rotate(40deg);
+}
+
+.btn6 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 340%;
+    transition: all .9s ease-in-out;
+    background: #78c7d2;
+    transform: translate(-120%, -25%) rotate(40deg);
+}
+
+.btn4:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+}
+
+.btn5:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+}
+
+.btn6:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+}
+
+.btn7 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 340%;
+    transition: all .9s ease-in-out;
+    background: #78c7d2;
+    transform: translate(-120%, -25%) rotate(40deg);
+}
+  
+.btn8 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 340%;
+    transition: all .9s ease-in-out;
+    background: #78c7d2;
+    transform: translate(-120%, -25%) rotate(40deg);
+}
+
+.btn9 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 340%;
+    transition: all .9s ease-in-out;
+    background: #78c7d2;
+    transform: translate(-120%, -25%) rotate(40deg);
+}
+
+.btn7:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+}
+
+.btn8:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+}
+
+.btn9:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tablet small*/
+
+@media only screen and (min-width: 600px){
+    .buttonsall{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 40px;
+    }
+    .buttonsall2{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin-top: 5px;
+    }
+    .buttonsall3{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin-top: 4px;
+    }
+    .btn1 button, .btn2 button, .btn3 button, .btn4 button, .btn5 button, .btn6 button, .btn7 button, .btn8 button, .btn9 button{
+        position: relative;
+        display: block;
+        border: none;
+        color: white;
+        background: #222;
+        padding: 8px;
+        font-size: 13px;
+        font-weight: 700;
+        cursor: pointer;
+        overflow: hidden;
+        height: 100px;
+        width: 185px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    }
+    
+    button:hover{
+        box-shadow: 0 5px 50px rgba(0,0,0,.2);
+    }
+    
+    .comp{
+        display: none;
+    }
+    .comp-small{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+    
+    #mainpage {
+        margin-bottom: 150px;
+    }
+    .wrapper{
+        text-align: center;/*cały element z animacją*/
+        position: relative;
+        padding-top: 25px ;
+        padding-left: 2px;
+    }
+    
+    .wrapper .static-txt{  
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Quinque", sans-serif;  /* text statyczny*/
+    }
+    
+    .wrapper .dynamic-txts{
+        margin-left: 20px;
+        height: 90px;
+        line-height: 80px;
+        overflow: hidden;
+    }
+    
+    .dynamic-txts li{
+        list-style: none;
+        color: #FC6D6D;
+        font-size: 50px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    
+    @keyframes slide {
+        100%{
+          top: -360px;
+        }
+    }
+    
+    .dynamic-txts li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+        font-family: "SummerPixel", sans-serif;   /* text ruchomy*/
+    }
+    
+    .dynamic-txts li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 160%;
+        width: 100%;
+        background: rgba(53,55,64);
+        border-left: 2px solid #FC6D6D;
+        animation: typing 3s steps(10) infinite;
+    }
+    
+    @keyframes typing {
+        40%, 60%{
+          left: calc(100% + 30px);
+        }
+        100%{
+          left: 0;
+        }
+    }    
+    
+    .btn1 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 240%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn2 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 240%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn3 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 240%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn1:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn2:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn3:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn4 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 240%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn5 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 240%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn6 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 240%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn4:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn5:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn6:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn7 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 240%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn8 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 240%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn9 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 300%;
+        width: 240%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn7:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn8:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn9:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    button span{
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tablet mid*/
+
+@media only screen and (min-width: 900px){
+    .buttonsall{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    
+    .buttonsall2{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .buttonsall3{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .btn1 button, .btn2 button, .btn3 button, .btn4 button, .btn5 button, .btn6 button, .btn7 button, .btn8 button, .btn9 button{
+        position: relative;
+        display: block;
+        border: none;
+        color: white;
+        background: #222;
+        padding: 10px 30px;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        overflow: hidden;
+        height: 100px;
+        width: 275px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    }
+    
+    button:hover{
+        box-shadow: 0 5px 50px rgba(0,0,0,.2);
+    }
+    
+    .comp{
+        display: none;
+    }
+    .comp-small{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+
+    .tablet{
+        display: block;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 148px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0), #333333 20%, #333333);
+        color: #fff;
+        text-align: center;
+        padding-top: 15px;
+        font-family: "BrunoAce", sans-serif;
+        font-size: 15px;
+    }
+    #mainpage {
+        margin-bottom: 150px;
+    }
+    .wrapper{
+        text-align: center;/*cały element z animacją*/
+        position: relative;
+        padding-top: 25px ;
+        padding-left: 2px;
+    }
+    
+    .wrapper .static-txt{  
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Quinque", sans-serif;  /* text statyczny*/
+    }
+    
+    .wrapper .dynamic-txts{
+        margin-left: 20px;
+        height: 90px;
+        line-height: 80px;
+        overflow: hidden;
+    }
+    
+    .dynamic-txts li{
+        list-style: none;
+        color: #FC6D6D;
+        font-size: 50px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    
+    @keyframes slide {
+        100%{
+          top: -360px;
+        }
+    }
+    
+    .dynamic-txts li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+        font-family: "SummerPixel", sans-serif;   /* text ruchomy*/
+    }
+    
+    .dynamic-txts li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 160%;
+        width: 100%;
+        background: rgba(53,55,64);
+        border-left: 2px solid #FC6D6D;
+        animation: typing 3s steps(10) infinite;
+    }
+    
+    @keyframes typing {
+        40%, 60%{
+          left: calc(100% + 30px);
+        }
+        100%{
+          left: 0;
+        }
+    }    
+    
+    .btn1 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn2 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn3 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn1:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn2:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn3:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn4 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn5 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn6 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn4:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn5:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn6:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn7 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn8 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn9 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn7:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn8:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn9:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    button span{
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tablet big*/
+
+@media only screen and (min-width: 1200px){
+    .buttonsall{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .buttonsall2{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        margin-top: 25px;
+    }
+    
+    .buttonsall3{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        margin-top: 25px;
+    }
+    
+    .btn1 button, .btn2 button, .btn3 button, .btn4 button, .btn5 button, .btn6 button, .btn7 button, .btn8 button, .btn9 button{
+        position: relative;
+        display: block;
+        border: none;
+        color: white;
+        background: #222;
+        padding: 10px 50px;
+        font-size: 22px;
+        font-weight: 700;
+        cursor: pointer;
+        overflow: hidden;
+        height: 110px;
+        width: 345px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    }
+    .comp-small{
+        display: block;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 120px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0), #333333 30%, #333333);
+        color: #fff;
+        text-align: center;
+        padding-top: 10px;
+        font-family: "BrunoAce", sans-serif;
+        font-size: 19px;
+    }
+
+    .comp{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .btn5 button{
+        width: 350px;
+        padding: 0;
+    }
+    
+    button:hover{
+        box-shadow: 0 5px 50px rgba(0,0,0,.2);
+    }
+    
+    .tablet{
+        display: block;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 148px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0), #333333 20%, #333333);
+        color: #fff;
+        text-align: center;
+        padding-top: 15px;
+        font-family: "BrunoAce", sans-serif;
+        font-size: 15px;
+    }
+    #mainpage {
+        margin-bottom: 150px;
+    }
+    .wrapper{
+        text-align: center;/*cały element z animacją*/
+        position: relative;
+        padding-top: 25px ;
+        padding-left: 2px;
+    }
+    
+    .wrapper .static-txt{  
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Quinque", sans-serif;  /* text statyczny*/
+    }
+    
+    .wrapper .dynamic-txts{
+        margin-left: 20px;
+        height: 90px;
+        line-height: 80px;
+        overflow: hidden;
+    }
+    
+    .dynamic-txts li{
+        list-style: none;
+        color: #FC6D6D;
+        font-size: 50px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    
+    @keyframes slide {
+        100%{
+          top: -360px;
+        }
+    }
+    
+    .dynamic-txts li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+        font-family: "SummerPixel", sans-serif;   /* text ruchomy*/
+    }
+    
+    .dynamic-txts li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 160%;
+        width: 100%;
+        background: rgba(53,55,64);
+        border-left: 2px solid #FC6D6D;
+        animation: typing 3s steps(10) infinite;
+    }
+    
+    @keyframes typing {
+        40%, 60%{
+          left: calc(100% + 30px);
+        }
+        100%{
+          left: 0;
+        }
+    }    
+    
+    .btn1 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn2 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn3 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn1:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn2:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn3:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn4 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn5 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn6 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn4:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn5:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn6:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn7 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn8 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn9 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn7:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn8:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn9:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    button span{
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*comp version*/
+
+@media only screen and (min-width: 1500px){
+    .buttonsall{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 175px;
+        margin-bottom: 40px;
+    }
+    
+    .buttonsall2{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 175px;
+        margin-top: 40px;
+    }
+    
+    .buttonsall3{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 175px;
+        margin-top: 40px;
+    }
+    
+    .btn1 button, .btn2 button, .btn3 button, .btn4 button, .btn5 button, .btn6 button, .btn7 button, .btn8 button, .btn9 button{
+        position: relative;
+        display: block;
+        border: none;
+        color: white;
+        background: #222;
+        padding: 10px 50px;
+        font-size: 22px;
+        font-weight: 700;
+        cursor: pointer;
+        overflow: hidden;
+        height: 115px;
+        width: 350px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    }
+    
+    .btn5 button{
+        width: 350px;
+        padding: 0;
+    }
+    
+    button:hover{
+        box-shadow: 0 5px 50px rgba(0,0,0,.2);
+    }
+    
+    .comp{
+        display: block;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 103px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0), #333333 30%, #333333);
+        color: #fff;
+        text-align: center;
+        padding-top: 10px;
+        font-family: "BrunoAce", sans-serif;
+        font-size: 19px;
+    }
+    
+    .phone{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .comp-small{
+        display: none;
+    }
+    .btn1 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn2 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn3 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn1:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn2:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn3:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn4 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn5 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn6 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn4:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn5:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn6:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn7 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+      
+    .btn8 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn9 button:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 380%;
+        width: 140%;
+        transition: all .5s ease-in-out;
+        background: #78c7d2;
+        transform: translate(-120%, -25%) rotate(45deg);
+    }
+    
+    .btn7:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn8:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    .btn9:hover button:after{
+        transform: translate(-9%, -25%) rotate(45deg);
+    }
+    
+    button span{
+        position: relative;
+        z-index: 1;
+    }
+    
+    .wrapper{
+        text-align: center;/*cały element z animacją*/
+        position: relative;
+        padding-top: 35px ;
+        padding-left: 15px;
+    }
+    
+    .wrapper .static-txt{  
+        color: #fff;
+        font-size: 27px;
+        font-weight: 600;
+        font-family: "Quinque", sans-serif;  /* text statyczny*/
+    }
+    
+    .wrapper .dynamic-txts{
+        margin-left: 20px;
+        height: 90px;
+        line-height: 80px;
+        overflow: hidden;
+    }
+    
+    .dynamic-txts li{
+        list-style: none;
+        color: #FC6D6D;
+        font-size: 80px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 13s steps(1) infinite;
+    }
+    
+    @keyframes slide {
+        100%{
+          top: -360px;
+        }
+    }
+    
+    .dynamic-txts li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+        font-family: "SummerPixel", sans-serif;   /* text ruchomy*/
+    }
+    
+    .dynamic-txts li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 110%;
+        width: 100%;
+        background: rgba(53,55,64);
+        border-left: 2px solid #FC6D6D;
+        animation: typing 3s steps(11) infinite;
+    }
+    
+    @keyframes typing {
+        40%, 60%{
+          left: calc(100% + 30px);
+        }
+        100%{
+          left: 0;
+        }
+    }
+}
